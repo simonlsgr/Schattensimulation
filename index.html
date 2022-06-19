@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processing</title>
+    <script src="/js/processing.js"></script>
+</head>
+<body>
+    <h1>Punktförmige Lichtquelle / Zentralprojektion</h1>
+    <canvas style="margin-bottom: 20%;" data-processing-sources="/Schattensimulation/Schattensimulation.pde"></canvas>
+
+    <h1>Punktförmige Lichtquelle / Zentralprojektion zu Parallelprojektion / Sonnenlicht</h1>
+    <canvas style="margin-bottom: 20%;" data-processing-sources="/Zentralprojektion_zu_Parallelprojektion/Zentralprojektion_zu_Parallelprojektion.pde"></canvas>
+
+    <h1>Parallelprojektion</h1>
+    <canvas data-processing-sources="/Parallelprojektion/Parallelprojektion.pde"></canvas>
+
+
+</body>
+
+<style>
+    :root {
+        --color-background: #2B2A35;
+        --color-text: #E5DADA;
+        font: 1em ubuntu, sans-serif;
+    }
+
+    body {
+        background: var(--color-background);
+        color: var(--color-text);
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+
+    canvas {
+        display: block;
+        margin: 0 auto;
+    }
+
+
+</style>
+</html>
