@@ -30,13 +30,12 @@ void setup() {
 
 void draw() {
   //println(frameCount+ "\n"+ z + "\n");
-  if (stationaer) {
-    Quelle = new PVector(originaleQuelle.x, originaleQuelle.y, originaleQuelle.z);
-  } else if (!stationaer) {
-    Quelle = kreisfoermigeQuelle(Quelle);
+  if (!stationaer) {  
     frameCounter += 0.4;
   }
-  
+
+  Quelle = kreisfoermigeQuelle(Quelle);
+
   if (keyPressed) {
     if (key == 's'){
       stationaer = true;
